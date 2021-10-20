@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #1d273b;
+    font-weight: 300;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor1 {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    padding: 60px 0;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+header::before {
+    content: "";
+    display: block;
+    margin-bottom: 80px;
+}
+
+nav { 
+    width: 100%;
+    height: 90px;
+    background: #fff;
+    border-bottom: 1px solid transparent;
+    box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, .2);
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.nav .logo {
+    height: 90px;
+}
+
+
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
+    align-items: center;
+}
+
+.enlaces-header {
+    font-weight: 300;
+}
+
+.nav .enlaces-header a{
+    color: #5d6678;
+    text-decoration: none;
+    margin-left: 25px;
+}
+
+.nav .enlaces-header a:hover{
+    color: #e91414;
+}
+
+.hamburguer { 
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    z-index: 100;
+    cursor: pointer;
+}
+
+.hamburguer > i{
+    font-size: 25px;
+    line-height: 80px;
+}
+
+.contenido-header {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenido-header > img {
+    width: 550px;
+    animation: ease-in animat 1.5s;
+}
+
+@keyframes animat{
+    0%{
+        transform: scale(0);
+    } 100% {
+        transform: scale(1);
+    }
+}
+
+.textos-header{
+    margin: 0 0 0 30px;
+}
+
+.contenido-header p {
+    font-weight: 100;
+    margin-top: 14px;
+    color: #5d6678;
+    font-size: 25px;
+}
+
+.acerca-nosotros {
+    background: #f2f2f2;
+}
+
+.contenedor-articulo{ 
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    justify-content: space-around;
+}
+
+.articulo {
+    width: 29%;
+    background: #fff;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    padding: 45px 30px 60px 30px;
+}
+
+.articulo:hover {
+    box-shadow: 0 4px 10px rgba(17, 29, 48, .26);
+}
+
+.articulo > i {
+    font-size: 30px;
+    display: inline-block;
+}
+
+.articulo > h3 {
+    font-size: 24px;
+    margin-top: 30px;
+}
+
+.articulo > p {
+    font-weight: 100;
+    color: #5d6678;
+    margin-top: 15px;
+    padding-bottom: 20px;
+}
+
+.preguntas {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.preguntas > img {
+    width: 550px;
+    animation: ease-in animat 1s;
+}
+
+.resultados {
+    background: #a7d5d6;
+    padding-top: 30px;   
+}
+
+.contenido-resultado {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.numeros { 
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.numeros .numero {
+    width: 45%;
+    background: rgba(255, 255, 255, .2);
+    color: #fff;
+    border-radius: 10px;
+    padding: 40px 35px;
+    margin-bottom: 20px;
+}
+
+.numeros .numero h4 {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.numeros .numero p {
+    color: #f2f5fc;
+    font-weight: 300;
+}
+
+.resultados-texto {
+    width: 37%;
+    
+}
+
+.resultados-texto h4 {
+    color: #fff;
+    font-size: 40px;
+}
+
+.resultados-texto p {
+    color: #fff;
+    font-weight: 300;
+    margin: 20px 0;
+}
+
+.resultados-texto a {
+    color: #fff;
+    font-weight: 300;
+    margin: 20px 0;
+}
+
+.resultados-texto > a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid #fff;
+    padding: 10px 0;
+    width: 120px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.servicios {
+    display: flex;
+    justify-content: space-between;
+}
+
+.servicios > img {
+    width: 500px;
+}
+
+.box-servicios {
+    margin: 30px 30px 0 0;
+}
+
+.box-servicios h4 {
+    font-size: 24px;
+    background: #f2f2f2;
+    width: 350px;
+    border-radius: 6px;
+    padding: 10px 0 10px 0 15px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background: #ffdbd9;
+    padding: 60px 0;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+.parte-footer {
+    width: 20%;
+    text-align: center;
+}
+
+.parte-footer h4 {
+    color: #1d273b;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.redes-sociales i {
+    font-size: 50px;
+    display: inline-block;
+    color: #adb6c7;
+    cursor: pointer;
+}
+
+.redes-sociales i:hover {
+    color: #fff;
+    background-color: #000;
+    border-color: #000;
+}
